@@ -1,21 +1,18 @@
 window.addEventListener('DOMContentLoaded', (event) => {
-    getVisitCount();
-  })
-  
-  const functionApi = '';
-  
-  const getVisitCount = () => {
-    let count = 30;
-    fetch(functionApi)
+  getVisitCount();
+});
+
+const functionApi = 'http://localhost:7071/api/counter';
+
+const getVisitCount = () => {
+  fetch(functionApi)
       .then(response => response.json())
       .then(response => {
-        console.log("Website called function API.");
-        count = response.count;
-        document.getElementById("counter").innerText = count;
+          console.log("Website called function API.");
+          const count = response.count;
+          document.getElementById("counter").innerText = count;
       })
-      .catch(function(error) {
-        console.log(error);
+      .catch(error => {
+          console.error('Error fetching the visit count:', error);
       });
-    return count;
-  }
-  
+};
