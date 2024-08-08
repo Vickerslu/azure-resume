@@ -2,10 +2,11 @@ import logging
 import os
 import json
 import azure.functions as func
+from azure.identity import DefaultAzureCredential
 from azure.cosmos import CosmosClient, exceptions
 
 endpoint = os.environ['COSMOS_DB_ENDPOINT']
-key = os.environ['COSMOS_DB_KEY']
+key = DefaultAzureCredential()
 client = CosmosClient(endpoint, key)
 database_name = 'AzureResume'
 container_name = 'Counter'
