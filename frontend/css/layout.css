@@ -236,10 +236,13 @@ ul#nav li.current a { color: #F06000; }
 /* ------------------------------------------------------------------ */
 
 #resume {
-   background: #fff;
-   padding-top: 90px;
-   padding-bottom: 72px;
-   overflow: hidden;
+   display: flex;
+   justify-content: center;    /* Center horizontally */
+   align-items: center;        /* Center vertically */
+   height: 100vh;              /* Make the section fill the entire viewport */
+   width: 100%;
+   overflow: hidden;           /* Hide any overflow */
+   background-color: #fff;     /* Ensure a white background */
 }
 
 #resume a, #resume a:visited  { color: #11ABB0; }

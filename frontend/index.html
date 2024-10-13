@@ -26,6 +26,7 @@
    ================================================== -->
    <script src="js/modernizr.js"></script>
    <script src="main.js"></script>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/pdfobject/2.2.6/pdfobject.min.js"></script>
 
    <!-- Favicons
 	================================================== -->
@@ -88,7 +89,7 @@
 
             <p>First-Class Computer Science graduate backed by six years of diverse support experience, including IT support/infrastructure engineering. An energetic self-starter, problem-solver, and team player with a professional demeanor and well-rounded technical skills.</p>
             
-            <a href="Luke Vickers Resume.pdf" download="Luke Vickers Resume.pdf">
+            <a href="https://docs.google.com/document/d/16yL3zjLaUnS-_UGnSjbscZJaLyqQcfh952jIpqVy0fU/export?format=pdf            ">
                <button>Download Resume (PDF)</button>
            </a>
 
@@ -104,222 +105,12 @@
 
    <!-- Resume Section
    ================================================== -->
-   <section id="resume">
-
-      <!-- Projects
-      ----------------------------------------------- -->
-      <div class="row education">
-
-         <div class="three columns header-col">
-            <h1><span>Projects</span></h1>
-         </div>
-
-         <div class="nine columns main-col">
-
-            <div class="row item">
-
-               <div class="twelve columns">
-
-                  <h3>Azure Cloud-Hosted Resume (You are here!)</h3>
-                  <p>
-                     <ul class="disc">
-                        <li>Deployed HTML, CSS and Javascript files to Azure Blob Storage, and hosted them on the Azure CDN.</li>
-                        <li>Registered a custom domain and set up DNS to point to an Azure Endpoint using CNAME records. Additionally, set up HTTPS on the custom domain to ensure secure delivery with SSL.</li>
-                        <li>Configured MX, DMARC, and SPF records for custom domain email functionality.</li>
-                        <li>Utilised serverless Azure Functions to connect to a CosmosDB to track, update and display visitor count.</li>
-                        <li>Configured Git for source control and Implemented CI/CD with GitHub Actions to automate deployment.</li>
-                      </ul>
-                  </p>
-
-               </div>
-
-            </div> <!-- item end -->
-
-         </div> <!-- main-col end -->
-
-      </div> <!-- End Education -->
-
-
-      <!-- Work
-      ----------------------------------------------- -->
-      <div class="row work">
-
-         <div class="three columns header-col">
-            <h1><span>EXPERIENCE</span></h1>
-         </div>
-
-         <div class="nine columns main-col">
-
-            <div class="row item">
-
-               <div class="twelve columns">
-
-                  <h3>J. Rothschild Capital Management</h3>
-                  <p class="info">IT Support/Infrastructure Engineer<span>&bull;</span> <em class="date">March 2024 - Present</em></p>
-
-                  <p>
-                     <ul class="disc">
-                        <li>Maintaining onsite IT infrastructure for a £3 billion financial investment trust within a small team of 3, reporting directly to the Infrastructure Manager and IT Director.</li>
-                        <li>Administrating user accounts, mailboxes, groups, and permissions across the hybrid on-premises and 365 environment.</li>
-                        <li>Handling all support tickets from over 70 colleagues, including C-suite executives and VIP’s, ensuring efficient and professional resolution of technical issues.</li>
-                        <li>Implemented Single Sign-On (SSO) within Entra ID for various third-party applications to enhance security and user experience, ensuring smooth rollout with minimal downtime.</li>
-                        <li>Managed an end-to-end printer replacement project for 5 departments, achieving seamless network integration with zero downtime.</li>
-                        <li>Implemented a company-wide ticketing system, significantly streamlining IT support processes and enhancing user experience.</li>
-                        <li>Maintaining robust backup and disaster recovery solutions to safeguard critical data.</li>
-                     </ul>
-                  </p>
-
-               </div>
-
-            </div> <!-- item end -->
-
-            <div class="row item">
-
-               <div class="twelve columns">
-
-                  <h3>eduThing</h3>
-                  <p class="info">IT Onsite Engineer <span>&bull;</span> <em class="date">October 2023 - March 2024</em></p>
-
-                  <p>
-                     <ul class="disc">
-                        <li>Managed the IT in a dynamic, high-pressure environment, maintaining strong working relationships with key stakeholders to strategically align IT solutions with the institution's goals.</li>
-                        <li>Delivered comprehensive technical support to staff through remote assistance, phone support, and in-person interactions, promptly addressing hardware and software issues to minimise disruptions to the learning environment.</li>
-                        <li>Utilised ticketing software to exceed Service Level Agreements (SLAs), ensuring the swift resolution of over 50 weekly IT support tickets while consistently upholding client satisfaction benchmarks.</li>
-                        <li>Wrote scripts to automate common repetitive tasks using Python and PowerShell, eliminating manual workload.</li>
-                        <li>Collaborated with cross-functional teams to efficiently escalate and resolve complex issues, contributing to a streamlined and responsive IT support ecosystem.</li>
-                     </ul>
-                  </p>
-
-               </div>
-
-            </div> <!-- item end -->
-
-            <div class="row item">
-
-               <div class="twelve columns">
-
-                  <h3>Tesco</h3>
-                  <p class="info">Customer Support and Sales<span>&bull;</span> <em class="date">September 2018 - October 2023</em></p>
-
-                  <p>
-                     <ul class="disc">
-                        <li>Acted as the initial point of contact for customers, providing product information, and offering assistance, whilst resolving customer concerns promptly, maintaining a 95% customer satisfaction rate and preserving the store's positive reputation.</li>
-                        <li>Cultivated lasting relationships with customers through strong communication skills, establishing a loyal customer base and contributing to an increase in repeat business. Received over 20 "Wow" comments in recognition of outstanding dedication to customer service.</li>
-                        <li>Collaborated with a diverse team to achieve departmental goals, fostering a positive and cooperative work environment.</li>
-                      </ul>
-                  </p>
-
-               </div>
-
-            </div> <!-- item end -->
-
-         </div> <!-- main-col end -->
-
-      </div> <!-- End Work -->
-
-
-      <!-- Education
-      ----------------------------------------------- -->
-      <div class="row education">
-
-         <div class="three columns header-col">
-            <h1><span>Education</span></h1>
-         </div>
-
-         <div class="nine columns main-col">
-
-            <div class="row item">
-
-               <div class="twelve columns">
-
-                  <h3>BSc (Hons) Computer Science</h3>
-                  <p class="info">Queen Mary University of London <em class="date"><span>&bull;</span> <em class="date"></em>First Class</em><span>&bull;</span> <em class="date">2022</em></p>
-
-                  <p>
-                     <ul class="disc">
-                        <li>Modules included cloud computing, security engineering, distributed systems, operating systems, computer systems and networks, web technology, internet protocols.</li>
-                     </ul>
-                  </p>
-
-               </div>
-
-            </div> <!-- item end -->
-
-         </div> <!-- main-col end -->
-
-      </div> <!-- End Education -->
-
-      <!-- Certifications
-      ----------------------------------------------- -->
-      <div class="row education">
-
-         <div class="three columns header-col">
-            <h1><span>Certifications</span></h1>
-         </div>
-
-         <div class="nine columns main-col">
-
-            <div class="row item">
-
-               <div class="twelve columns">
-
-                  <h3>BTTC: Bloomberg Technical Training Certification</h3>
-                  <p class="info"><em class="date">2024</em></p>
-
-                  <p>
-                     <ul class="disc">
-                        <li>Qualified to install and support Bloomberg Terminals</li>
-                     </ul>
-                  </p>
-
-               </div>
-
-            </div> <!-- item end -->
-
-         </div> <!-- main-col end -->
-
-      </div> <!-- End Education -->
-
-      <!-- Skills
-      ----------------------------------------------- -->
-      <div class="row education">
-
-         <div class="three columns header-col">
-            <h1><span>Skills</span></h1>
-         </div>
-
-         <div class="nine columns main-col">
-
-            <div class="row item">
-
-               <div class="twelve columns">
-
-                  <h3>Skills</h3>
-                  <p>
-                     <ul class="disc">
-                        <li>Cloud Platforms: Microsoft Azure and 365 Admin</li>
-                        <li>Virtualisation: VMWare’s vCenter/vSphere</li>
-                        <li>Networking: Cisco routing, switching, VLANs</li>
-                        <li>Protocols and Security: TCP/IP, RDP, SSH, DNS, DHCP, HTTP</li>
-                        <li>Operating Systems: Windows (including Windows Server)</li>
-                        <li>Identity Governance/Administration: Active Directory, Group Policy, Entra (formerly Azure AD), 365 Admin</li>
-                        <li>Programming Languages: Python, Java, C#, HTML, CSS, JavaScript, SQL</li>
-                        <li>Backup/Disaster Recovery: Veeam, tape backups</li>
-                        <li>Hardware: Installed motherboards, CPUs, RAM, SSDs/HDDs, PSUs, Monitors, Cabling, VoIP Phones, Printers, etc.</li>
-                        <li>Support Ticketing Systems: Halo PSA, Jitbit</li>
-                     </ul>
-                  </p>
-
-               </div>
-
-            </div> <!-- item end -->
-
-         </div> <!-- main-col end -->
-
-      </div> <!-- End Education -->
-
-
-   </section> <!-- Resume Section End-->
+   <section id="resume"></section>
+   <script>
+      var pdfUrl = 'https://docs.google.com/document/d/16yL3zjLaUnS-_UGnSjbscZJaLyqQcfh952jIpqVy0fU/edit?usp=sharing';
+      PDFObject.embed(pdfUrl, "#resume");
+  </script>
+   <!-- Resume Section End -->
 
 
    <!-- footer
